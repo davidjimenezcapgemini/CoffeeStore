@@ -70,6 +70,12 @@ img {
   background-color: #fff;
 }
 
+.btnOn a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
 .btnOn, .btnOnProducts {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);

@@ -51,6 +51,11 @@ img{
     &:hover{
         background-color: #fff;
     }
+    a{
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
 }
 .btnOn, .btnOnProducts{
 	position: absolute;
