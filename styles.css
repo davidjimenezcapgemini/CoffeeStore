@@ -149,7 +149,7 @@ footer {
 
 .parallax {
   /* The image used */
-  background-image: url("./../assets/tyler-nix-HzWERZc5yP4-unsplash.jpg");
+  background-image: url("./assets/tyler-nix-HzWERZc5yP4-unsplash.jpg");
   height: 30em;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
