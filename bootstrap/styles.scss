@@ -1,0 +1,125 @@
+@import "variables.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100%;
+    background-color: $base-color;
+    top:0;
+    position: fixed;
+    z-index: 1;
+}
+.right{ text-align: right; }
+.icon{
+    width: 1.5em;
+	height: 1.5em;
+    &:hover {
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 6px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+     }
+}
+nav{
+    background-color: $base-color;
+}
+.card{
+	box-shadow: 2px 2px 2px 1px $border-shadow;
+    width: 100%;
+    margin-bottom: 10px;
+    &:hover{
+        border: 1px solid $border-content;
+        cursor: pointer;
+        filter: contrast(120%);
+    }
+}
+.hidden{
+	opacity: 0;
+}
+.btnOn{
+	top: 80%;
+	left: 50%;
+	font-size: 2em;
+    &:hover{
+        background-color: #fff;
+    }
+}
+.btnOn, .btnOnProducts{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	padding: 1em;
+	border: none;
+	cursor: pointer;
+	background-color: $button-background;
+}
+.btnOnProducts{
+	top: 90%;
+	left: 50%;
+	width: 90%;
+	font-size: 1em;
+}
+.card-header { 
+    position: relative;
+    &:hover .btnOnProducts{
+        opacity: 1; 
+    } 
+}
+.crop {
+    margin-top:20px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 30em;
+        object-fit: cover;
+    }
+}
+.container{
+    margin-top: 10px;
+    padding: 5px;
+}
+footer{
+    background-color: $base-color;
+}
+h2{
+    margin: 40px;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+}
+aside{
+    width: 100%;
+}
+@media screen and (max-width:600px) {
+    h3{
+		font-size: 0.5em;
+	}
+	.crop{
+        button {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 1em;
+            padding: 1em;
+            border: none;
+            cursor: pointer;
+            background-color: $button-background;
+        }
+	}
+	
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+	h3{
+		font-size: 0.9em;
+	}
+}
