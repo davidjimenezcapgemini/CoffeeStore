@@ -76,6 +76,13 @@ img {
   text-decoration: none;
 }
 
+hr {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
 .btnOn, .btnOnProducts {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -115,17 +122,44 @@ img {
 }
 
 .container {
-  margin-top: 3em;
+  margin-top: 6em;
   padding: 5px;
+}
+
+.best-sellers .card {
+  border-radius: 0;
+}
+
+.best-sellers .card-header, .best-sellers .card-footer {
+  background-color: #fff;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.best-sellers .card-header img, .best-sellers .card-footer img {
+  width: 100%;
+  height: 30em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   background-color: #bce29b;
 }
 
-h2 {
-  margin: 40px;
-  padding: 10px;
+.parallax {
+  /* The image used */
+  background-image: url("./../assets/tyler-nix-HzWERZc5yP4-unsplash.jpg");
+  height: 30em;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titles {
+  font-size: 1em;
   text-align: center;
   font-weight: bold;
 }
@@ -142,10 +176,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.headerProducts hr {
-  width: 70%;
 }
 
 aside {
