@@ -96,6 +96,7 @@ hr{
 }
 .container{
     margin-top: 6em;
+    margin-bottom: 6em;
     padding: 5px;
 }
 
@@ -121,12 +122,21 @@ footer{
     /* The image used */
     background-image: url('./assets/tyler-nix-HzWERZc5yP4-unsplash.jpg');
     height: 30em; 
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin:0;
+    position:relative;
+    *{
+        font-family: 'Comfortaa', cursive;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        top: 20%;
+        left: 20%;
+    }
   }
 .titles{
     font-size: 1em;
