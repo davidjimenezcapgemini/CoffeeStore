@@ -35,12 +35,12 @@ img {
 }
 
 .bi-heart-fill {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #385939;
 }
 
 .bi-heart-fill:hover {
-  color: #bce29b;
+  color: #528354;
 }
 
 #flexCheckDefault {
@@ -98,11 +98,28 @@ img {
   text-decoration: none;
 }
 
-hr {
+.titleSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titleSection hr {
   width: 70%;
   margin: auto;
-  margin-bottom: 5em;
-  margin-top: 2em;
+}
+
+.titleSection .titles {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
 }
 
 .btnOn, .btnOnProducts {
@@ -180,6 +197,7 @@ footer {
   background-size: cover;
   margin: 0;
   position: relative;
+  margin-bottom: 6em;
 }
 
 .parallax * {
@@ -197,12 +215,6 @@ footer {
           justify-content: left;
   top: 20%;
   left: 20%;
-}
-
-.titles {
-  font-size: 1em;
-  text-align: center;
-  font-weight: bold;
 }
 
 .headerProducts {
@@ -224,7 +236,7 @@ aside {
 }
 
 .badge {
-  background-color: #bce29b !important;
+  background-color: #528354 !important;
 }
 
 @media screen and (max-width: 600px) {

@@ -23,10 +23,10 @@ img{
 .right{ text-align: right; }
 .left{ text-align: left; }
 .bi-heart-fill{
-    font-size: 2em;
+    font-size: 1.5em;
     color: $dark-color;
     &:hover {
-        color: $base-color;
+        color: $third-color;
      }
 }
 
@@ -71,13 +71,21 @@ img{
         text-decoration: none;
     }
 }
-hr{
-    width: 70%;
-    margin:auto;
-    margin-bottom: 5em;
-    margin-top: 2em;
-
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    hr{
+        width: 70%;
+        margin:auto;
+    }
+    .titles{
+        font-size: 1em;
+        text-align: center;
+        font-weight: bold;
+    }
 }
+
 .btnOn, .btnOnProducts{
 	position: absolute;
 	transform: translate(-50%, -50%);
@@ -142,6 +150,7 @@ footer{
     background-size: cover;
     margin:0;
     position:relative;
+    margin-bottom: 6em;
     *{
         font-family: 'Comfortaa', cursive;
         position: absolute;
@@ -152,11 +161,6 @@ footer{
         left: 20%;
     }
   }
-.titles{
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-}
 .headerProducts{
     margin-top: 6em;
     display: flex;
@@ -168,7 +172,7 @@ aside{
     width: 100%;
 }
 .badge{
-    background-color: $base-color !important;
+    background-color: $third-color!important;
 }
 @media screen and (max-width:600px) {
     h3{
