@@ -13,8 +13,12 @@ img {
 .navbar {
   width: 100%;
   background-color: #bce29b;
+  position: fixed !important;
+  /* Set the navbar to fixed position */
   top: 0;
-  position: fixed;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
   z-index: 1;
 }
 
@@ -128,8 +132,8 @@ hr {
 }
 
 .crop {
-  margin-top: 20px;
   position: relative;
+  z-index: 0;
 }
 
 .crop img {
