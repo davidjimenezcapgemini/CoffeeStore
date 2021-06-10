@@ -8,6 +8,8 @@
     <title>My Coffee Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -17,14 +19,14 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">Coffee Store</a>
+              <a class="navbar-brand" href="./index.html">MY COFFEE STORE</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a class=" setBlack nav-link" href="./ourProducts.html">Our products</a></li>
-                  <li class="nav-item"><a class="setBlack nav-link" href="#">About us</a></li>
+                  <li class="nav-item"><a class=" nav-link" href="./ourProducts.html">OUR PRODUCTS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -59,28 +61,32 @@
           <div class="col-12">     
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
               <div class="col">
-                <div class="card">
-                  <div class="card-header">
-                    <img src="./assets/brooke-lark-GTMGG-xvxdU-unsplash.jpg" alt="Cup of coffee">
-                    <button class="btnOnProducts hidden">Explore this coffee</button>
+                <div class="hovered">
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="./assets/brooke-lark-GTMGG-xvxdU-unsplash.jpg" alt="Cup of coffee">
+                      <button class="btnOnProducts hidden">Explore this coffee</button>
+                    </div>
+                    <div class="card-footer text-center">
+                      <h4>Black Coffee</h4>
+                      <h5>1.30&euro;</h5>                             
+                    </div> 
                   </div>
-                  <div class="card-footer text-center">
-                    <h4>Black Coffee</h4>
-                    <h5>1.30&euro;</h5>                             
-                  </div> 
-                </div>
+                </div>  
               </div>
               <div class="col">
-                <div class="card">
-                  <div class="card-header">
-                    <img src="./assets/jen-p-FoG8lotg7AA-unsplash.jpg" alt="Cup of coffee">
-                    <button class="btnOnProducts hidden">Explore this coffee</button>
+                <div class="hovered">
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="./assets/jen-p-FoG8lotg7AA-unsplash.jpg" alt="Cup of coffee">
+                      <button class="btnOnProducts hidden">Explore this coffee</button>
+                    </div>
+                    <div class="card-footer text-center">
+                      <h4>Latte</h4>
+                      <h5>1.30&euro;</h5>                             
+                    </div> 
                   </div>
-                  <div class="card-footer text-center">
-                    <h4>Latte</h4>
-                    <h5>1.30&euro;</h5>                             
-                  </div> 
-                </div>
+                </div>  
               </div>
             </div>
           </div>
@@ -123,73 +129,81 @@
             <div class="col-lg-10 col-md-9 col-sm-12">     
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
-                  <div class="card">
-                    <div class="card-header">
-                      <img src="./assets/brigitte-tohm-EAay7Aj4jbc-unsplash.jpg" alt="Cup of coffee">
-                      <button class="btnOnProducts hidden">Explore this coffee</button>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <span class="col-6"><h4>Coffee 1</h4></span>
-                        <span class="col-4"><h5>1.30&euro;</h5></span> 
-                        <span class ="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                  <div class="hovered">
+                    <div class="card">
+                      <div class="card-header">
+                        <img src="./assets/brigitte-tohm-EAay7Aj4jbc-unsplash.jpg" alt="Cup of coffee">
+                        <button class="btnOnProducts hidden">Explore this coffee</button>
                       </div>
-                    </div> 
-                  </div>
+                      <div class="card-footer">
+                        <div class="row">
+                          <span class="col-6"><h4>Coffee 1</h4></span>
+                          <span class="col-4"><h5>1.30&euro;</h5></span> 
+                          <span class ="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>    
                 </div>
                 <div class="col">
-                  <div class="card">
-                    <div class="card-header">
-                      <img src="./assets/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="Cup of coffee">
-                      <button class="btnOnProducts hidden">Explore this coffee</button>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <span class="col-6"><h4>Coffee 1</h4></span>
-                        <span class="col-4"><h5>1.30&euro;</h5></span> 
-                       <span class ="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                  <div class="hovered">
+                    <div class="card">
+                      <div class="card-header">
+                        <img src="./assets/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="Cup of coffee">
+                        <button class="btnOnProducts hidden">Explore this coffee</button>
                       </div>
+                      <div class="card-footer">
+                        <div class="row">
+                          <span class="col-6"><h4>Coffee 1</h4></span>
+                          <span class="col-4"><h5>1.30&euro;</h5></span> 
+                         <span class="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                        </div>
+                      </div> 
                     </div> 
-                  </div>
+                  </div>    
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">
-                      <img src="./assets/nathan-dumlao-cEJwMalRit8-unsplash.jpg" alt="Cup of coffee">
-                      <button class="btnOnProducts hidden">Explore this coffee</button>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <span class="col-6"><h4>Coffee 1</h4></span>
-                        <span class="col-4"><h5>1.30&euro;</h5></span> 
-                       <span class ="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                <div class="col">  
+                  <div class="hovered">   
+                    <div class="card">
+                      <div class="card-header">
+                        <img src="./assets/nathan-dumlao-cEJwMalRit8-unsplash.jpg" alt="Cup of coffee">
+                        <button class="btnOnProducts hidden">Explore this coffee</button>
                       </div>
-                    </div> 
+                      <div class="card-footer">
+                        <div class="row">
+                          <span class="col-6"><h4>Coffee 1</h4></span>
+                          <span class="col-4"><h5>1.30&euro;</h5></span> 
+                          <span class ="col-2 right"><i class="bi bi-heart-fill"></i></span>
+                        </div>
+                      </div> 
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="parallax">
-          <h1 id="header">HELLO</h1>
+        <div class="parallax index">
+          <h1 id="header"></h1>
         </div>
         <span class="titleSection">
           <h2 class="titles">CUSTOMIZE YOUR COFFEE</h2>
           <hr>
         </span>
         <div class="container customize">
-          <div class="card">
-            <div class="row">
-              <div class="col-lg-5">
-                <img src="./assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpg" alt="...">
-              </div>
-              <div class="col-lg-7">
-                <div class="card-body">
-                 <h2 class="card-title left"> Customize your coffee  <span class="badge right">New</span></h2>
-                 <hr>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="hovered">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img src="./assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpg" alt="...">
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                   <h2 class="card-title left"> Customize your coffee  <span class="badge right">New</span></h2>
+                   <hr>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
                 </div>
               </div>
             </div>

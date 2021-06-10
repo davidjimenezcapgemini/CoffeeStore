@@ -10,12 +10,19 @@ img{
     height: 100%;
 }
 .navbar{
+    * {
+        font-family: 'Source Code Pro', monospace;
+    }
     width: 100%;
     background-color: $base-color;
     position: fixed !important; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 1;
+    .nav-link{
+        
+        font-weight: bold;
+    }
 }
 .setBlack{
     color: black !important;
@@ -43,16 +50,6 @@ img{
     }
     &:focus{
         box-shadow: 1em $base-color;
-    }
-}
-.card{
-	box-shadow: 2px 2px 2px 1px $border-shadow;
-    width: 100%;
-    margin-bottom: 10px;
-    &:hover{
-        border: 1px solid $base-color;
-        cursor: pointer;
-        filter: contrast(120%);
     }
 }
 .hidden{
@@ -101,12 +98,7 @@ img{
 	width: 90%;
 	font-size: 1em;
 }
-.card-header { 
-    position: relative;
-    &:hover .btnOnProducts{
-        opacity: 1; 
-    } 
-}
+
 .crop {
     position: relative;
     z-index: 0;
@@ -140,9 +132,14 @@ img{
 footer{
     background-color: $base-color;
 }
-.parallax {
-    /* The image used */
+.index{
     background-image: url('./assets/tyler-nix-HzWERZc5yP4-unsplash.jpg');
+}
+.ourProducts{
+    background-image: url('./assets/nathan-dumlao-I_394sxx0ec-unsplash.jpg');
+}
+.parallax {
+    /* The image used */ 
     height: 30em; 
     background-attachment: fixed;
     background-position: center;
@@ -163,16 +160,104 @@ footer{
   }
 .headerProducts{
     margin-top: 6em;
+}
+.myProducts{
     display: flex;
     flex-direction: column;
     align-items: center;
+    hr{
+        width: 50%;
+        margin:auto;
+    }
+    .titles{
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
 }
 
 aside{
     width: 100%;
 }
+.hovered{
+    .card{     
+        box-shadow: 2px 2px 2px 1px $border-shadow;
+        width: 100%;
+        margin-bottom: 10px;
+        &:hover{
+            border: 1px solid $base-color;
+            cursor: pointer;
+            filter: contrast(120%);
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        
+        .card-header { 
+            position: relative;
+            &:hover .btnOnProducts{
+                opacity: 1; 
+            } 
+        }
+    }
+}
+.addToCart{
+    padding: 10px;
+    background-color: $dark-color;
+    font-size:0.9em;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    border: none;
+}
+.productCard{
+    img{
+        box-shadow: 2px 2px 2px 2px $border-shadow
+    }
+    
+    .card{
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        height: 40em;
+        
+        img{
+            height: 60%;
+            object-fit: cover;
+        }
+        .card-body{
+            .card-title{ 
+                font-family: 'Source Code Pro', monospace;
+            }
+            padding: 10px;
+            a{
+                &:hover{ cursor: pointer;}
+            }
+            .el1{ margin-bottom: 0.4em; }
+            .el{ margin-top: 2em; }
+            .bi{
+                font-size: 1em;
+                margin-right: 0.3em;
+                color: $base-color;
+            }
+            .cuantityEl{
+                input{
+                    width: 5em;
+                }
+                *{
+                    border: 1px solid $border-shadow;
+                    margin-right: 1em;
+                }
+                display: flex;
+                flex-direction: row;
+                align-content: stretch;
+                justify-content: left;
+            }
+        }
+    }
+}
 .badge{
     background-color: $third-color!important;
+    margin-left: 10%;
 }
 @media screen and (max-width:600px) {
     h3{
@@ -221,6 +306,13 @@ aside{
             object-fit: cover;
         } 
     }
+    .card-product{
+        height: 20em;
+        img{
+            height: 20em;
+            object-fit: cover;
+        } 
+    }
     .customize{
         .card{ 
             img{
@@ -236,6 +328,13 @@ aside{
         height: 20em;
         img{
             height: 20em;
+            object-fit: cover;
+        } 
+    }
+    .card-product{
+        height: 30em;
+        img{
+            height:30em;
             object-fit: cover;
         } 
     }
