@@ -1,0 +1,1 @@
+$('#cartModal').modal('show');

@@ -1,5 +1,44 @@
 @import "variables.scss";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.containerNav{
+    display: flex;
+    flex-direction: row;
+}
+
+.table-image {
+    .btn-sm{
+        background-color: $secondary-color;
+        color: white;
+    }
+    thead {
+      td, th {
+        border: 0;
+        color: #666;
+        font-size: 0.8rem;
+      }
+    }
+    img{
+        width: 4em;
+        height: 5.5em;
+    }
+    
+    td, th {
+      vertical-align: middle;
+      text-align: center;
+      
+      &.qty {
+        max-width: 2rem;
+      }
+    }
+  }
+  
+  .price {
+    margin-left: 1rem;
+  }
+  
+  .modal-footer {
+    padding-top: 0rem;
+  }
 * {
     margin:0;
     padding:0;
@@ -22,6 +61,13 @@ img{
     .nav-link{
         
         font-weight: bold;
+    }
+    .cartButton{
+        background-color: transparent;
+        border: none;
+        margin-left: 1em;
+        font-size: 2em;
+        color: $secondary-color;
     }
 }
 .setBlack{
