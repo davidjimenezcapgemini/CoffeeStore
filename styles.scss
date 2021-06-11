@@ -36,6 +36,52 @@ img{
         color: $third-color;
      }
 }
+.imgShaped{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: auto;
+    background-color: $third-color;
+    .containerInfo{
+        width: 50%;
+        padding: 1em 5em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        color: #fff;
+        .bold{
+            font-weight: bold;
+        }
+        *{
+            margin-bottom: 2em;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .bi-bag{
+                &:hover{
+                    cursor: pointer;
+                }
+                font-size: 2em;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .ImgInfo{
+        display: inline-block;
+        width: 50%;
+        .setImg{
+            width: 100%;
+            height: 30em;
+            min-height: 460px;
+            background-image: url("./assets/kyle-glenn-_AR74EoWdy0-unsplash.jpg");
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    }
+}
 
 #flexCheckDefault{
     border-radius: 50%;
@@ -108,9 +154,13 @@ img{
         object-fit: cover;
     }
 }
-.container{
+.first{
     margin-top: 6em;
+}
+.bottom{
     margin-bottom: 6em;
+}
+.container{
     padding: 5px;
 }
 
@@ -127,6 +177,30 @@ img{
             height: 30em;
             object-fit: cover;
         }
+    }
+}
+.relatedProducts{
+    .card{
+        border-radius: 0;
+        border: none;
+        background-color: #fff;
+        box-shadow: none;
+    }
+    .card-header{
+        border-bottom: 0;
+        border-top: 0;
+        background-color: #fff;
+        img{
+            width: 100%;
+            height: 15em;
+            object-fit: cover;
+        }
+    }
+    .btnOnProducts{
+        top: 80%;
+        left: 50%;
+        width: 80%;
+        font-size: 0.9em;
     }
 }
 footer{
@@ -218,10 +292,10 @@ aside{
         box-shadow: none;
         border: none;
         width: 100%;
-        height: 40em;
+        height: 100%;
         
         img{
-            height: 60%;
+            height: 25em;
             object-fit: cover;
         }
         .card-body{

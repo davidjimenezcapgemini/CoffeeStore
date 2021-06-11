@@ -48,7 +48,78 @@ img {
 }
 
 .bi-heart-fill:hover {
-  color: #528354;
+  color: #377439;
+}
+
+.imgShaped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: auto;
+  background-color: #377439;
+}
+
+.imgShaped .containerInfo {
+  width: 50%;
+  padding: 1em 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  color: #fff;
+}
+
+.imgShaped .containerInfo .bold {
+  font-weight: bold;
+}
+
+.imgShaped .containerInfo * {
+  margin-bottom: 2em;
+}
+
+.imgShaped .containerInfo *:last-child {
+  margin-bottom: 0;
+}
+
+.imgShaped .containerInfo * .bi-bag {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.imgShaped .containerInfo * .bi-bag:hover {
+  cursor: pointer;
+}
+
+.imgShaped .ImgInfo {
+  display: inline-block;
+  width: 50%;
+}
+
+.imgShaped .ImgInfo .setImg {
+  width: 100%;
+  height: 30em;
+  min-height: 460px;
+  background-image: url("./assets/kyle-glenn-_AR74EoWdy0-unsplash.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 #flexCheckDefault {
@@ -146,9 +217,15 @@ img {
      object-fit: cover;
 }
 
-.container {
+.first {
   margin-top: 6em;
+}
+
+.bottom {
   margin-bottom: 6em;
+}
+
+.container {
   padding: 5px;
 }
 
@@ -167,6 +244,34 @@ img {
   height: 30em;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.relatedProducts .card {
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.relatedProducts .card-header {
+  border-bottom: 0;
+  border-top: 0;
+  background-color: #fff;
+}
+
+.relatedProducts .card-header img {
+  width: 100%;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.relatedProducts .btnOnProducts {
+  top: 80%;
+  left: 50%;
+  width: 80%;
+  font-size: 0.9em;
 }
 
 footer {
@@ -287,11 +392,11 @@ aside {
           box-shadow: none;
   border: none;
   width: 100%;
-  height: 40em;
+  height: 100%;
 }
 
 .productCard .card img {
-  height: 60%;
+  height: 25em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -347,7 +452,7 @@ aside {
 }
 
 .badge {
-  background-color: #528354 !important;
+  background-color: #377439 !important;
   margin-left: 10%;
 }
 
