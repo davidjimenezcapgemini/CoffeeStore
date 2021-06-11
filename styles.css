@@ -51,77 +51,6 @@ img {
   color: #377439;
 }
 
-.imgShaped {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  height: auto;
-  background-color: #377439;
-}
-
-.imgShaped .containerInfo {
-  width: 50%;
-  padding: 1em 5em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  color: #fff;
-}
-
-.imgShaped .containerInfo .bold {
-  font-weight: bold;
-}
-
-.imgShaped .containerInfo * {
-  margin-bottom: 2em;
-}
-
-.imgShaped .containerInfo *:last-child {
-  margin-bottom: 0;
-}
-
-.imgShaped .containerInfo * .bi-bag {
-  font-size: 2em;
-  margin-right: 20px;
-}
-
-.imgShaped .containerInfo * .bi-bag:hover {
-  cursor: pointer;
-}
-
-.imgShaped .ImgInfo {
-  display: inline-block;
-  width: 50%;
-}
-
-.imgShaped .ImgInfo .setImg {
-  width: 100%;
-  height: 30em;
-  min-height: 460px;
-  background-image: url("./assets/kyle-glenn-_AR74EoWdy0-unsplash.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
 #flexCheckDefault {
   border-radius: 50%;
 }
@@ -174,6 +103,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1em;
 }
 
 .titleSection hr {
@@ -246,18 +176,103 @@ img {
      object-fit: cover;
 }
 
+.imgShaped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: auto;
+  background-color: #377439;
+}
+
+.imgShaped .containerInfo {
+  width: 100%;
+  padding: 1em 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  color: #fff;
+}
+
+.imgShaped .containerInfo .bold {
+  font-weight: bold;
+}
+
+.imgShaped .containerInfo * {
+  margin-bottom: 2em;
+}
+
+.imgShaped .containerInfo *:last-child {
+  margin-bottom: 0;
+}
+
+.imgShaped .containerInfo * .bi-bag {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.imgShaped .containerInfo * .bi-bag:hover {
+  cursor: pointer;
+}
+
+.imgShaped .ImgInfo {
+  display: inline-block;
+  width: 100%;
+}
+
+.imgShaped .ImgInfo .setImg {
+  width: 100%;
+  height: 30em;
+  min-height: 460px;
+  background-image: url("./assets/kyle-glenn-_AR74EoWdy0-unsplash.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .relatedProducts .card {
   border-radius: 0;
-  border: none;
   background-color: #fff;
+  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.relatedProducts .card .card-header {
+  position: relative;
+}
+
+.relatedProducts .card .card-header:hover .btnOnProducts {
+  opacity: 1;
+}
+
+.relatedProducts * {
+  margin-bottom: 2em;
 }
 
 .relatedProducts .card-header {
   border-bottom: 0;
   border-top: 0;
   background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .relatedProducts .card-header img {
@@ -268,7 +283,7 @@ img {
 }
 
 .relatedProducts .btnOnProducts {
-  top: 80%;
+  top: 70%;
   left: 50%;
   width: 80%;
   font-size: 0.9em;
@@ -537,6 +552,23 @@ aside {
     height: 25em;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .imgShaped {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .imgShaped .containerInfo, .imgShaped .ImgInfo {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
