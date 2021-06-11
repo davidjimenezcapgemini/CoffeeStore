@@ -33,7 +33,7 @@ img{
     font-size: 1.5em;
     color: $dark-color;
     &:hover {
-        color: $third-color;
+        color: $light-secondary_color;
      }
 }
 
@@ -46,7 +46,7 @@ img{
     }
     &:hover{
         cursor: pointer;
-        border: 0.4px solid $dark-color;
+        border: 0.4px solid $secondary-color;
         box-shadow: none;
     }
     &:focus{
@@ -141,7 +141,7 @@ img{
     flex-wrap: wrap;
     align-items: stretch;
     height: auto;
-    background-color: $third-color;
+    background-color: $secondary-color;
     .containerInfo{
         width: 100%;
         padding: 1em 5em 0;
@@ -346,7 +346,7 @@ aside{
     }
 }
 .badge{
-    background-color: $third-color!important;
+    background-color: $light-secondary_color!important;
     margin-left: 10%;
 }
 @media screen and (max-width:600px) {

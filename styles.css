@@ -48,7 +48,7 @@ img {
 }
 
 .bi-heart-fill:hover {
-  color: #377439;
+  color: #826d5a;
 }
 
 #flexCheckDefault {
@@ -62,7 +62,7 @@ img {
 
 #flexCheckDefault:hover {
   cursor: pointer;
-  border: 0.4px solid #385939;
+  border: 0.4px solid #453326;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -190,7 +190,7 @@ img {
       -ms-flex-align: stretch;
           align-items: stretch;
   height: auto;
-  background-color: #377439;
+  background-color: #453326;
 }
 
 .imgShaped .containerInfo {
@@ -472,7 +472,7 @@ aside {
 }
 
 .badge {
-  background-color: #377439 !important;
+  background-color: #826d5a !important;
   margin-left: 10%;
 }
 
