@@ -210,6 +210,10 @@ img {
   padding: 5px;
 }
 
+.best-sellers {
+  margin-top: 32px;
+}
+
 .best-sellers .card {
   border-radius: 0;
 }
@@ -626,5 +630,9 @@ aside {
   .imgShaped .containerInfo, .imgShaped .ImgInfo {
     width: 50%;
   }
+}
+
+.filter-container {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=styles.css.map */
